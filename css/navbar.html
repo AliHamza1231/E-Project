@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="#">WOW</a></div>
+        <ul class="links">
+            <li><a href="Home">Home</a></li>
+            <li><a href="Gallery">Gallery</a></li>
+            <li><a href="Site Map">Site Map</a></li>
+            <li><a href="About us">About Us</a></li>
+        </ul>
+        <a href="#" class="action-btn">Contact Us</a>
+        <div class="toggle-btn">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="dropdown-menu ">
+            <li><a href="Home">Home</a></li>
+            <li><a href="Gallery">Gallery</a></li>
+            <li><a href="Site Map">Site Map</a></li>
+            <li><a href="About us">About Us</a></li>
+            <li><a href="#" class="action-btn">Contact Us</a></li> 
+        </div>
+    </div>
+    </header>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+        /* body{
+            height: 100vh;
+            background-color: #000;
+            background-image: url(/img/33-GettyImages-154260931-216706f.jpg);
+            background-size: cover;
+            background-position: center;
+        } */
+        li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 1rem;
+            font-weight: bolder;
+        }
+        a:hover{
+            color: white;
+        }
+        header{
+            position: relative;
+            padding: 0 2rem;
+        }
+        .navbar{
+            width: 100%;
+            height: 60px;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .navbar .logo a{
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .navbar .links{
+            display: flex;
+            gap: 2rem;
+        }
+        .navbar .toggle-btn{
+            color: #fff;
+            font-size: 1.5rem;
+            cursor: pointer;
+            display: none;
+        }
+        .action-btn{
+            background-color: orange;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            border: none;
+            outline: none;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: scale 0.2 ease;
+        }
+        .action-btn:hover{
+            scale: 1.05;
+            color:#fff;
+        }
+        .action-btn:active{
+            scale: 0.95;
+        }
+        .dropdown-menu{
+            display: none;
+            position: absolute;
+            right: 2rem;
+            top: 60px;
+            height: 0;
+            width: 300px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(15px);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+        .dropdown-menu.open{
+            height: 240px;
+        }
+        .dropdown-menu li{
+            padding: 0.7rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .dropdown-menu .action-btn{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        @media (max-width: 992px) {
+            .navbar .links,
+            .navbar .action-btn {
+                display: none;
+        }
+        .navbar .toggle-btn {
+            display: block;
+        }
+        .dropdown-menu{
+            display: block;
+        }
+    }
+        @media (max-width: 576px){
+            .dropdown-menu{
+                left: 2rem;
+                width: unset;
+            }
+
+    }
+    </style>
+    <script>
+        const toggleBtn = document.querySelector('.toggle-btn')
+        const toggleBtnIcon = document.querySelector('.toggle-btn i')
+        const dropDownMenu = document.querySelector('.dropdown-menu')
+
+        toggleBtn.onclick = function() {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars' 
+            
+        }
+                
+
+
+    </script>
+</body>
+</html>

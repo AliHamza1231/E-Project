@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WOW</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    
+    .heading {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 20px auto;
+    }
+
+    .heading h1 {
+        font-size: 50px;
+        color: white;
+        margin-bottom: 25px;
+        position: relative;
+        padding-top: 70px;
+
+    }
+
+    .heading h1::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        display: block;
+        margin: 0 auto;
+        background-color: orange;
+    }
+
+    .heading p {
+        font-size: 18px;
+        color: black;
+        margin-bottom: 35px;
+    }
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px 20px;
+    }
+
+    .about {
+        height: 600px;
+        /* border: 2px solid black; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-bottom: 300px;
+
+    }
+
+    .about-image {
+        flex: 1;
+        margin-right: 40px;
+        overflow: hidden;
+    }
+
+    .about-image img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        transition: 0.5s ease;
+    }
+
+    .about-image:hover img {
+        transform: scale(1.2);
+    }
+
+    .about-content {
+        flex: 1;
+    }
+
+    .about-content h2 {
+        margin-right: 210px;
+        font-size: 23px;
+        margin-bottom: 15px;
+        color: white;
+        text-transform: uppercase;
+    }
+
+    .about-content p {
+        font-size: 18px;
+        line-height: 1.5;
+        color: black;
+    }
+
+    .about-content .read-more {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: orange;
+        color: #fff;
+        font-size: 19px;
+        text-decoration: none;
+        border-radius: 25px;
+        margin-top: 15px;
+        transition: 0.3s ease;
+    }
+
+    .about-content .read-more:hover {
+        background-color: black;
+    }
+
+    @media screen and (max-width: 768px) {
+        .heading {
+            padding: 0px 20px;
+        }
+
+        .heading h1 {
+            font-size: 36px;
+        }
+
+        .heading p {
+            font-size: 17px;
+            margin-bottom: 0px;
+        }
+
+        .container {
+            padding: 0px;
+        }
+
+        .about {
+            padding: 20px;
+            flex-direction: column;
+        }
+
+        .about-image {
+            margin-right: 0px;
+            margin-bottom: 20px;
+        }
+
+        .about-content p {
+            padding: 0px;
+            font-size: 16px;
+        }
+
+        .about-content .read-more {
+            font-size: 16px;
+        }
+
+    }
+</style>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="index.html">WOW</a></div>
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/css/gallery2.html">Gallery</a></li>
+                <li><a href="sitemap.html">Site Map</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="/css/feedback.html">Feedback</a></li>
+            </ul>
+            <a href="sitemap.html" class="action-btn">Contact Us</a>
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="dropdown-menu ">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/css/gallery2.html">Gallery</a></li>
+                <li><a href="sitemap.html">Site Map</a></li>
+                <li><a href="aboutUs.html">About Us</a></li>
+                <li><a href="/css/feedback.html">Feedback</a></li>
+                <li><a href="sitemap.html" class="action-btn">Contact Us</a></li>
+            </div>
+        </div>
+    </header>
+    <div class="heading">
+        <h1>ABOUT US</h1>
+        <p>Our mission is to be different, diversified and necessary, to be seen not just as TV networks but rather as a
+            portfolio of innovative culture brands. The strength and diversity of this portfolio is how we are able to
+            speak to a wide range of audience interests.</p>
+    </div>
+    <div class="container">
+        <section class="about">
+            <div class="about-image">
+                <img src="/img/aboutus.jpg" alt="">
+            </div>
+            <div class="about-content">
+                <h2>TAG & AD SPECIFICATIONS.</h2>
+                <p>Creative, compelling storytelling is the foundation on which the A+E Networks® portfolio was built.
+                    From our in-house Creative Partnerships Solutions Team to A+E Studios and our factual studios – Six
+                    West MediaTM and Category Six — to our strategic talent partnerships with Propagate: Artists First,
+                    Authentic Talent.</p>
+                <a href="" class="read-more">Read More</a>
+            </div>
+        </section>
+    </div>
+
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>company</h4>
+                    <ul>
+                        <li><a href="#">about us</a></li>
+                        <li><a href="#">our services</a></li>
+                        <li><a href="#">privacy policy</a></li>
+                        <li><a href="#">affiliate program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>get help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">shipping</a></li>
+                        <li><a href="#">returns</a></li>
+                        <li><a href="#">order status</a></li>
+                        <li><a href="#">payment options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>online shop</h4>
+                    <ul>
+                        <li><a href="#">watch</a></li>
+                        <li><a href="#">bag</a></li>
+                        <li><a href="#">shoes</a></li>
+                        <li><a href="#">dress</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>follow us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,587 @@
+                      /* navbar */
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+
+ .header {
+    position: fixed;;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 5%;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 30px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.social-media {
+    margin: 0 auto 0 50px;
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    margin-right: 10px;
+    transition: .5s;
+}
+
+.social-media a:hover {
+    background: #fff;
+}
+
+.social-media a i {
+    font-size: 20px;
+    color: #fff;
+    transition: .5s;
+}
+
+.social-media a:hover i {
+    color: #444;
+}
+
+.navbar a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 30px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    transition: .5s;
+}
+
+.navbar a:hover {
+    color: #444;
+}
+                                   /* Giza Pyramid */
+* {
+    margin: 0%;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.row {
+    display: flex;
+    height: 88%;
+    align-items: center;
+
+}
+
+.col {
+    flex-basis: 50%;
+    padding-left: 25px;
+    margin-top: 90px;
+}
+
+col h2 {
+    padding-left: 18px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serifs;
+    color: beige;
+    font-size: 100px;
+    
+
+}
+
+
+
+.col {
+    padding-top: 95px;
+
+}
+
+.card {
+    width: 298px;
+    height: 338px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 27px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 20px 55px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.7s;
+}
+
+.card1 {
+    background-image: url(images/pyramid-sky-desert-ancient.jpg);
+}
+
+.card2 {
+    background-image: url(images/night-view-pyramids-giza-milky-way-generative-ai_634053-2942.avif);
+}
+
+.card3 {
+    background-image: url(images/giza-pyramid-EGYPTSECRETS1016-617b2b1b23dd4fd38bc9f365af7235ab.jpg);
+}
+
+.card4 {
+    background-image: url(images/33-GettyImages-154260931-216706f.jpg);
+}
+.card4a{
+    background-image: url(images/33-GettyImages-154260931-216706f.jpg);
+}
+.card4b{
+    background-image: url(images/33-GettyImages-154260931-216706f.jpg);
+}
+.card:hover {
+    transform: translateY(-18px);
+}
+                            /* The Hanging Gardens of Babylon */
+* {
+    margin: 0%;
+    padding: 0;
+}
+
+.Babylon {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/hbu-botanical-gardens-lights-201790_garden-highlights_donham_-richard-_longwood-volunteer-photographer_.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.row {
+    display: flex;
+    height: 88%;
+    align-items: center;
+
+}
+
+.col {
+    flex-basis: 50%;
+    padding-left: 25px;
+}
+
+h2 {
+    padding-left: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: beige;
+    text-align: center;
+    font-size: 100px;
+}
+
+
+.col {
+    padding-top: 95px;
+
+}
+
+.card {
+    width: 298px;
+    height: 338px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 27px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 20px 55px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.7s;
+}
+
+.card5 {
+    background-image: url(images/babylon2.jpg);
+}
+
+.card6 {
+    background-image: url(images/bablon.jpg);
+}
+
+.card7 {
+    background-image: url(images/babylonian-oasis-artist-rendering.webp);
+}
+
+.card8 {
+    background-image: url(images/chuck-cg-hanging-gardens-f.jpg);
+}
+
+.card:hover {
+    transform: translateY(-18px);
+}
+                                  /* temple of artemis */
+* {
+    margin: 0%;
+    padding: 0;
+}
+
+.Artemis  {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/night-view-5744489_1280.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.row {
+    display: flex;
+    height: 88%;
+    align-items: center;
+
+}
+
+.col {
+    flex-basis: 50%;
+    padding-left: 25px;
+}
+
+h2 {
+    padding-left: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: beige;
+    text-align: center;
+    font-size: 100px;
+}
+
+
+
+.col {
+    padding-top: 95px;
+
+}
+
+.card{
+    width: 298px;
+    height: 338px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 27px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 20px 55px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.7s;
+}
+
+.card9 {
+    background-image: url(images/TEMPLE1.jpg);
+}
+
+.card10 {
+    background-image: url(images/TEMPLE2.webp);
+}
+
+.card11 {
+    background-image: url(images/TEMPLE3.jpg);
+}
+
+.card12 {
+    background-image: url(images/TEMPLE4.jpg);
+}
+
+.card:hover {
+    transform: translateY(-18px);
+}
+                                       /* Statue of Zeus */
+* {
+    margin: 0%;
+    padding: 0;
+}
+
+.zeus {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/temple-of-olympian-zeus-athens.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.row {
+    display: flex;
+    height: 88%;
+    align-items: center;
+
+}
+
+.col {
+    flex-basis: 50%;
+    padding-left: 25px;
+}
+
+h2 {
+    padding-left: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: beige;
+    text-align: center;
+    font-size: 100px;
+}
+
+
+
+.col {
+    padding-top: 95px;
+
+}
+
+.card {
+    width: 298px;
+    height: 338px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 27px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 20px 55px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.7s;
+}
+
+.card13 {
+    background-image: url(images/statue1.avif);
+}
+
+.card14 {
+    background-image: url(images/statue2.jpg);
+}
+
+.card15 {
+    background-image: url(images/statue3.webp);
+}
+
+.card16 {
+    background-image: url(images/statue4.jpg);
+}
+
+.card:hover {
+    transform: translateY(-18px);
+}
+                        /* mausoleum at halicarnassus */
+* {
+    margin: 0%;
+    padding: 0;
+}
+
+.halicarnassus {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/mausoleum5_2x1.avif);
+    background-position: center;
+    background-size: cover;
+}
+
+.row {
+    display: flex;
+    height: 88%;
+    align-items: center;
+
+}
+
+.col {
+    flex-basis: 50%;
+    padding-left: 25px;
+}
+
+h2 {
+    padding-left: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: beige;
+    text-align: center;
+    font-size: 100px;
+}
+
+
+.col {
+    padding-top: 95px;
+
+}
+
+.card {
+    width: 298px;
+    height: 338px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 27px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 20px 55px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.7s;
+}
+
+.card17 {
+    background-image: url(images/m1.jpg);
+}
+
+.card18 {
+    background-image: url(images/m2.jpg);
+}
+
+.card19 {
+    background-image: url(images/m3.jpg);
+}
+
+.card20 {
+    background-image: url(images/m4.jpg);
+}
+
+.card:hover {
+    transform: translateY(-18px);
+}
+                            /*  colossus of rhodes*/
+* {
+    margin: 0%;
+    padding: 0;
+}
+
+.rhodes {
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/Day-03-Rhodes-at-night.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.row {
+    display: flex;
+    height: 88%;
+    align-items: center;
+
+}
+
+.col {
+    flex-basis: 50%;
+    padding-left: 25px;
+}
+
+h2 {
+    padding-left: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: beige;
+    text-align: center;
+    font-size: 100px;
+}
+
+.col {
+    padding-top: 95px;
+
+}
+
+.card {
+    width: 298px;
+    height: 338px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 27px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 20px 55px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.7s;
+}
+
+.card21 {
+    background-image: url(images/R1.webp);
+}
+
+.card22 {
+    background-image: url(images/R2.webp);
+}
+
+.card23 {
+    background-image: url(images/R3.jpg);
+}
+
+.card24 {
+    background-image: url(imageS/R4.jpeg);
+}
+
+.card:hover {
+    transform: translateY(-18px);
+}
+                               /* lighthouse of alexandria */
+* {
+    margin: 0%;
+    padding: 0;
+}
+.alexandria{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/alexandria-at-night.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.row {
+    display: flex;
+    height: 88%;
+    align-items: center;
+
+}
+.col {
+    flex-basis: 50%;
+    padding-left: 25px;
+}
+h2 {
+    padding-left: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: beige;
+    text-align: center;
+    font-size: 100px;
+}
+
+.col {
+    padding-top: 95px;
+
+}
+.card {
+    width: 298px;
+    height: 338px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 27px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 20px 55px;
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.7s;
+}
+.card25 {
+    background-image: url(images/L1.jpg);
+}
+.card26 {
+    background-image: url(images/L2.avif);
+}
+.card27 {
+    background-image: url(images/L3.jpg);
+}
+.card28 {
+    background-image: url(imageS/L4.jpg);
+}
+.card:hover {
+    transform: translateY(-18px);
+}
+
+
